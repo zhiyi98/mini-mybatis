@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.example.mybatis.mapper.UserMapper">
+
+	<select id="getUser" resultType="com.example.mybatis.entity.User">
+		select * from user where id = #{id}
+	</select>
+	
+	<select id="getAll" resultType="com.example.mybatis.entity.User">
+		select * from user
+	</select>
+	
+</mapper>
